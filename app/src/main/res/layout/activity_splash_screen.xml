@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.co/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.co/apk/res/android"
     xmlns:android2="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,26 +11,45 @@
     tools:context=".Splash_Screen"
     tools:ignore="ExtraText,MissingPrefix,NamespaceTypo,UseCompoundDrawables">
 
-    <ImageView
-        android2:layout_width="200dp"
-        android2:layout_height="200dp"
-        android2:src="@drawable/clock2"
-        tools:ignore="ContentDescription" />
 
     <TextView
-        android2:textAlignment="center"
+        android2:id="@+id/textView2"
         android2:layout_width="wrap_content"
         android2:layout_height="wrap_content"
-        android2:layout_marginTop="3dp"
-        android2:capitalize="characters"
-        android2:fontFamily="cursive"
-        android2:freezesText="true"
-        android2:gravity="center"
-        android2:text="Stop Watch\n Ishu"
-        android2:textColor="@color/colorPrimary"
-        android2:textSize="32sp"
+        android2:fontFamily="sans-serif-black"
+        android2:text="STOP WATCH"
+        android2:textColor="#46DA4C"
+        android2:textSize="34sp"
         android2:textStyle="bold"
-        android:id="@+id/tv_text"
-        tools:ignore="Deprecated,HardcodedText,TextViewEdits,TextContrastCheck" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
 
-</LinearLayout>
+    <ImageView
+        android2:id="@+id/imageView5"
+        android2:layout_width="wrap_content"
+        android2:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+
+    <ImageView
+        android2:id="@+id/imageView"
+        android2:layout_width="wrap_content"
+        android2:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        app:srcCompat="@drawable/clock2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
